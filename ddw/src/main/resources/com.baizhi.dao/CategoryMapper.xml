@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baizhi.dao.CategoryDao">
+    <!-- Category的resultMap,column是给数据库列起的别名,它对应property类的属性-->
+    <resultMap id="result_Category_Map" type="com.baizhi.entity.Category">
+        <id column="category_id" property="categoryId" />
+        <result column="parent_id" property="parentId" />
+        <result column="category_name" property="categoryName" />
+        <result column="count" property="count" />
+        <result column="category_type" property="categoryType" />
+    </resultMap>
+
+
+</mapper>
